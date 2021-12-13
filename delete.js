@@ -25,7 +25,7 @@ $(document).ready(function () {
         if(Myarray !=null && Myarray.length >= 1){
             for(let i of Myarray){
                 console.log(i)
-            $('#AllPersons').append('<p>EL nombre es: '+i.name+'  la edad es: '+i.age+'su direccion es calle: '+i.street+' colonia: '+i.suburb+' numero: '+i.numero+' su email es: '+i.email+' y su fecha de nacimiento es el: '+i.date+'</p> <button type="button" class="btn btn-outline-danger del_element" value="'+i.email+'">DELETE</button>')
+            $('#AllPersons').append('<p>EL nombre es: '+i.name+'  la edad es: '+i.age+'su direccion es calle: '+i.street+' colonia: '+i.suburb+' numero: '+i.numero+' su email es: '+i.email+' y su fecha de nacimiento es el: '+i.date+'</p> <button type="button" class="btn btn-outline-danger del_element" value="'+i.email+'">DELETE</button><button type="button" class="btn btn-secondary">UPDATE</button>')
             }
         }
     }
@@ -100,4 +100,8 @@ $(document).ready(function () {
         localStorage.setItem('persons',JSON.stringify(toDel))
         drawNames()
     })
+ 
+ //update
+$(document.body)
+                 
 })
